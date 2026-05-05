@@ -1,7 +1,7 @@
 using System;
 
 namespace Sns.Models{
-    internal class User{
+    internal class User : IComparable<User>{
         public string Name {get;set;}
 
         public string Email { get; set; }
@@ -18,6 +18,12 @@ namespace Sns.Models{
             PhoneNumber=phoneNumber;
             IsActive = true;
         }
+
+        public int CompareTo(User? other){
+            if(other is null) return 1;
+            return string.Compare(Name, other.Name, StringComparison.OrdinalIgnoreCase);
+        }
+
         public override string ToString(){
             return "User : " + Name + "\nEmail : " + Email + "\nPhone Number : " + PhoneNumber + "\nActive : " + IsActive;
         }

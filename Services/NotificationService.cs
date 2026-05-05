@@ -14,7 +14,9 @@ namespace Sns.Services{
             return _userRepository.Add(user);
         }
         public List<User> GetAllUsers(){
-            return _userRepository.GetAll();
+            List<User> users = _userRepository.GetAll();
+            users.Sort();
+            return users;
         }
 
 
@@ -43,9 +45,11 @@ namespace Sns.Services{
             }
 
             foreach(var user in users){
-                new EmailNotification(DateTime.Now, message, user.Name);
+                Notification email = new EmailNotification(DateTime.Now, message, user);
+                email.Send();
 
-                new SmsNotification( DateTime.Now, message, user.Name );
+                Notification sms = new SmsNotification( DateTime.Now, message, user );
+                sms.Send();
             }
         }
     }
