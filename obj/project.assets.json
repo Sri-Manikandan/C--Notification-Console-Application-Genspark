@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/srimanikandanr/My Files/Presidio/Genspark-Training/C#/Day 3/Assignment 1/Assignment 1.csproj",
+      "projectUniqueName": "/Users/srimanikandanr/Downloads/Assignment 1/Assignment 1.csproj",
       "projectName": "Assignment 1",
-      "projectPath": "/Users/srimanikandanr/My Files/Presidio/Genspark-Training/C#/Day 3/Assignment 1/Assignment 1.csproj",
+      "projectPath": "/Users/srimanikandanr/Downloads/Assignment 1/Assignment 1.csproj",
       "packagesPath": "/Users/srimanikandanr/.nuget/packages/",
-      "outputPath": "/Users/srimanikandanr/My Files/Presidio/Genspark-Training/C#/Day 3/Assignment 1/obj/",
+      "outputPath": "/Users/srimanikandanr/Downloads/Assignment 1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/srimanikandanr/.nuget/NuGet/NuGet.Config"
